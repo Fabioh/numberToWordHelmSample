@@ -8,7 +8,7 @@ label:
 container:
   name: numbertoword
   pullPolicy: IfNotPresent
-  image: numbertoword
+  image: fabiohenrique/numbertoword
   tag: v1
   port: 80
 replicas: 3
