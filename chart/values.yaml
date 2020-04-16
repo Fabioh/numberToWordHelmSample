@@ -1,0 +1,18 @@
+environment: development
+
+apphost: k8s
+
+label:
+  name: numbertoword
+
+container:
+  name: numbertoword
+  pullPolicy: IfNotPresent
+  image: numbertoword
+  tag: v1
+  port: 80
+replicas: 3
+
+service:
+  port: 8888
+  type: ClusterIP
