@@ -1,4 +1,4 @@
-environment: development
+environment: production
 
 apphost: k8s
 
@@ -15,4 +15,4 @@ replicas: 3
 
 service:
   port: 8888
-  type: ClusterIP
+  type: LoadBalancer
